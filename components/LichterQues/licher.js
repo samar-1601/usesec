@@ -1,10 +1,12 @@
 import { Radio } from "@mantine/core";
 import { useState } from "react";
+import styles from "./style.module.css";
 
 const LicherQues = ({ question }) => {
   const [value, setValue] = useState("not answered");
   return (
     <Radio.Group
+      className={styles.questionContainer}
       name={question}
       label={question}
       offset="lg"
