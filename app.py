@@ -26,7 +26,7 @@ def sendQuestions():
             {"id": 3, "question": "How r you"},
         ],
         "liker": [
-            {"id": 1, "question": "How r you"},
+            {"id": 1, "question": "How r you liker"},
             {"id": 2, "question": "How r you"},
             {"id": 3, "question": "How r you"},
         ],
