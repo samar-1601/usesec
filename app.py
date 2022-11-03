@@ -31,7 +31,8 @@ def sendQuestions():
             {"id": 3, "question": "How r you"},
         ],
     }
-    return jsonify(questions)
+    import json
+    return json.load(open("database\data.json"))
 
 
 @app.route("/<type>/<id>/<ans>", methods=["POST", "GET"])
