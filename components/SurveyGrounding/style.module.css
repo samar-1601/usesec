@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.questions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questionContainer {
+    min-width: 1000px;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 46px;
+    font-weight: 600;
+}
