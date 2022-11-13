@@ -32,7 +32,7 @@ def sendQuestions():
         ],
     }
     import json
-    return json.load(open("database\data.json"))
+    return json.load(open("database/data.json"))
 
 
 @app.route("/<type>/<id>/<ans>", methods=["POST", "GET"])
