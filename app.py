@@ -2,6 +2,7 @@ from flask import Flask
 from flask import jsonify
 from flask_cors import CORS, cross_origin
 from flask import Flask, render_template
+from flask import request
 import random
 import json
 
@@ -31,8 +32,18 @@ def get_comments():
             comments["data"].append(comment_category["data"][rand_number])
     return comments
 
-@app.route("/<file_image_path>", methods=["GET"])
-def get_image(file_image_path):
+@app.route("/post_answer", methods=["GET", "POST"])
+def post_answer():
+    response = {}
+    response["question_type"] = request.args.get('question_type')
+    response["question_id"] = request.args.get('question_id')
+    response["question"] = request.args.get('question')
+    response["answer"] = request.args.get('answer')
+    return response
+
+@app.route("/get_image", methods=["GET"])
+def get_image():
+    file_image_path = request.args["file_path"]
     return render_template("index.html", user_image = file_image_path)
 
 @app.route("/<type>/<id>/<ans>", methods=["POST", "GET"])
