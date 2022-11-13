@@ -9,7 +9,7 @@
                     "comment_1_girl": "Haha, I already knew <<your_name>> is gay. Was never interested in the opposite gender.",
                     "comment_2": "WTF, gotta ban <<your_name>> from the sporting community",
                     "comment_3": "Damn homie, why did you lie being straight. Didn't expect this from you",
-                    "image": "database\\images\\Sexual Orientation_1.png"
+                    "image": "static\\images\\Sexual Orientation_1.png"
                 },
                 {
                     "id": 2,
@@ -17,7 +17,7 @@
                     "comment_1_girl": "I knew something's wrong with <<your_name>>.",
                     "comment_2": "Where are the girls in the search? ",
                     "comment_3": "Straight up gay @everybody.",
-                    "image": "database\\images\\Sexual Orientation_2.png"
+                    "image": "static\\images\\Sexual Orientation_2.png"
                 },
                 {
                     "id": 3,
@@ -25,7 +25,7 @@
                     "comment_1_girl": "I just vomitted seeing this shit, delete this man.",
                     "comment_2": "@university_students what do you have to say about this. I don't feel safe.",
                     "comment_3": "I think <<your_name>> needs treatment. He is not socially acceptable.",
-                    "image": "database\\images\\Sexual Orientation_3.png"
+                    "image": "static\\images\\Sexual Orientation_3.png"
                 }
             ]
         },
@@ -38,7 +38,7 @@
                     "comment_1_girl": "@university rustigate <<your_name>>",
                     "comment_2": "Hope your parents see this",
                     "comment_3": "Don't do this man, it's not good for your health. Need to tell your parents.",
-                    "image": "database\\images\\Alcohol_1.png"
+                    "image": "static\\images\\Alcohol_1.png"
                 },
                 {
                     "id": 2,
@@ -46,7 +46,7 @@
                     "comment_1_girl": "don't harm others, keep it to yourself",
                     "comment_2": "careless fool",
                     "comment_3": "Do you know about this aunty @<<your_mother>>?",
-                    "image": "database\\images\\Alcohol_2.png"
+                    "image": "static\\images\\Alcohol_2.png"
                 },
                 {
                     "id": 3,
@@ -54,7 +54,7 @@
                     "comment_1_girl": "the supplier :)",
                     "comment_2": "you should not post this in public",
                     "comment_3": "Do you know about this uncle @<<your_father>>?",
-                    "image": "database\\images\\Alcohol_3.png"
+                    "image": "static\\images\\Alcohol_3.png"
                 }
             ]
         },
@@ -67,7 +67,7 @@
                     "comment_1_girl": "We should not leave him alone for even a minute",
                     "comment_2": "not gonna hangout with a moron like you anymore, you should have told",
                     "comment_3": "Just wasting his money, he can't be fixed",
-                    "image": "database\\images\\Medical information and personal biometric data_1.png"
+                    "image": "static\\images\\Medical information and personal biometric data_1.png"
                 },
                 {
                     "id": 2,
@@ -75,7 +75,7 @@
                     "comment_1_girl": "even the boys should stay away hahaha",
                     "comment_2": "who will be <<your_name>>'s partner in prom night now.",
                     "comment_3": "not only this, I think <<your_name>> also has AIDS",
-                    "image": "database\\images\\Medical information and personal biometric data_2.png"
+                    "image": "static\\images\\Medical information and personal biometric data_2.png"
                 },
                 {
                     "id": 3,
@@ -83,7 +83,7 @@
                     "comment_1_girl": "God help him.",
                     "comment_2": "Call me anytime, I am always there for you.",
                     "comment_3": "",
-                    "image": "database\\images\\Medical information and personal biometric data_3.png"
+                    "image": "static\\images\\Medical information and personal biometric data_3.png"
                 }
             ]
         },
@@ -96,7 +96,7 @@
                     "comment_1_girl": "My time will be after 12 am. You guys decide yours ",
                     "comment_2": "I was also trying to get the number. but it was very hard",
                     "comment_3": "She is famous now.",
-                    "image": "database\\images\\Random_1.png"
+                    "image": "static\\images\\Random_1.png"
                 },
                 {
                     "id": 2,
@@ -104,7 +104,7 @@
                     "comment_1_girl": "Should have seen this before, was following his youtube channel from past 6 months",
                     "comment_2": "unsubscribed this hypocirte",
                     "comment_3": "",
-                    "image": "database\\images\\Random_2.png"
+                    "image": "static\\images\\Random_2.png"
                 },
                 {
                     "id": 3,
@@ -112,7 +112,7 @@
                     "comment_1_girl": "account number - xxxxxxxxxxxxx Benificiary - xxxxxxxxxxxxx Address - xxxxxxxxxxx Pin - xxxx Was easy to crack",
                     "comment_2": "current account balance - 0.00",
                     "comment_3": "",
-                    "image": "database\\images\\Random_3.png"
+                    "image": "static\\images\\Random_3.png"
                 },
                 {
                     "id": 4,
@@ -120,7 +120,7 @@
                     "comment_1_girl": "Why didn't you tell me? Am I nothing to you?",
                     "comment_2": "bhai hme tu bhul gya, akele akele nikal liya.",
                     "comment_3": "",
-                    "image": "database\\images\\Random_4.png"
+                    "image": "static\\images\\Random_4.png"
                 },
                 {
                     "id": 5,
@@ -128,7 +128,7 @@
                     "comment_1_girl": "such a liar, he was single till this moment as far as I remember",
                     "comment_2": "Such a shame stealing your best friend's girlfriend",
                     "comment_3": "",
-                    "image": "database\\images\\Random_5.png"
+                    "image": "static\\images\\Random_5.png"
                 },
                 {
                     "id": 6,
@@ -136,7 +136,7 @@
                     "comment_1_girl": "@<<your_mother>> look what he is upto mam.",
                     "comment_2": "Wasn't he a vegan, I don't even think thats chicken.",
                     "comment_3": "Is that pork, you dumbhead",
-                    "image": "database\\images\\Random_6.png"
+                    "image": "static\\images\\Random_6.png"
                 },
                 {
                     "id": 7,
@@ -144,7 +144,7 @@
                     "comment_1_girl": "@<<your_mother>> have a look aunty how he lives here.",
                     "comment_2": "that's why he never allows us to enter.",
                     "comment_3": "you got jackpot, nobody could reach <<your_name>>'s room",
-                    "image": "database\\images\\Random_7.png"
+                    "image": "static\\images\\Random_7.png"
                 },
                 {
                     "id": 8,
@@ -152,7 +152,7 @@
                     "comment_1_girl": "haha 25 and still a virgin.",
                     "comment_2": "such a looser,",
                     "comment_3": "he used to flex about his bodycount (>5).",
-                    "image": "database\\images\\Random_8.png"
+                    "image": "static\\images\\Random_8.png"
                 },
                 {
                     "id": 9,
@@ -160,7 +160,7 @@
                     "comment_1_girl": "such a liar, boooo",
                     "comment_2": "not gonna invite <<your_name>> to my party tommorow",
                     "comment_3": "",
-                    "image": "database\\images\\Random_9.png"
+                    "image": "static\\images\\Random_9.png"
                 },
                 {
                     "id": 10,
@@ -168,7 +168,7 @@
                     "comment_1_girl": "I knew it was a fake Rolex.",
                     "comment_2": "such a liar.",
                     "comment_3": "",
-                    "image": "database\\images\\Random_10.png"
+                    "image": "static\\images\\Random_10.png"
                 },
                 {
                     "id": 11,
@@ -176,7 +176,7 @@
                     "comment_1_girl": "Didn't you tell me you used to party all night.",
                     "comment_2": "that's why <<your_name>> looks tired in the office.",
                     "comment_3": "Is this allowed according to our office policy ?",
-                    "image": "database\\images\\Random_11.png"
+                    "image": "static\\images\\Random_11.png"
                 },
                 {
                     "id": 12,
@@ -184,7 +184,7 @@
                     "comment_1_girl": "Didn't you even learn from your bodycount (>10), maybe that's fake too.",
                     "comment_2": "thanks for sharing, last night <<your_name>> was hitting on me. Thank God i didn't kiss him.",
                     "comment_3": "",
-                    "image": "database\\images\\Random_12.png"
+                    "image": "static\\images\\Random_12.png"
                 },
                 {
                     "id": 13,
@@ -192,7 +192,7 @@
                     "comment_1_girl": "<<your_name>> is the one messaging everybody notoriously.",
                     "comment_2": "hahahaha such a pathetic name to choose",
                     "comment_3": "Now I know, I was getting cheap messages from red_blood_cell",
-                    "image": "database\\images\\Random_13.png"
+                    "image": "static\\images\\Random_13.png"
                 },
                 {
                     "id": 14,
@@ -200,7 +200,7 @@
                     "comment_1_girl": "Thanks for pointing it out, bad elements of society",
                     "comment_2": "Now he is in big trouble",
                     "comment_3": "From where he got weed, it's illegal in India",
-                    "image": "database\\images\\Random_14.png"
+                    "image": "static\\images\\Random_14.png"
                 },
                 {
                     "id": 15,
@@ -208,7 +208,7 @@
                     "comment_1_girl": "Why did he have to hide it?",
                     "comment_2": "Shamelessly eating in everybody's parties, now its payback time.",
                     "comment_3": "Ab to GPL hoga, @everybody is invited.",
-                    "image": "database\\images\\Random_15.png"
+                    "image": "static\\images\\Random_15.png"
                 },
                 {
                     "id": 16,
@@ -216,7 +216,7 @@
                     "comment_1_girl": "LOL, it's even his password on Twitter.",
                     "comment_2": "You guys won't believe the chats I just saw.",
                     "comment_3": "He asked @girl out on dinner, got rejected. HAHAHA",
-                    "image": "database\\images\\Random_16.png"
+                    "image": "static\\images\\Random_16.png"
                 },
                 {
                     "id": 17,
@@ -224,7 +224,7 @@
                     "comment_1_girl": "Outrageous, you are fired.",
                     "comment_2": "Will make sure you never get a job in this area.",
                     "comment_3": "<<your_name>> was the one not treating everyone equally. Shame.",
-                    "image": "database\\images\\Random_17.png"
+                    "image": "static\\images\\Random_17.png"
                 },
                 {
                     "id": 18,
@@ -232,7 +232,7 @@
                     "comment_1_girl": "Wasn't he the only child, why do you have to lie about your brother?",
                     "comment_2": "@everybody, apparently his little brother is some kind of a weirdo.",
                     "comment_3": "I see why he hid him from us.",
-                    "image": "database\\images\\Random_18.png"
+                    "image": "static\\images\\Random_18.png"
                 },
                 {
                     "id": 19,
@@ -240,7 +240,7 @@
                     "comment_1_girl": "We have a criminal living with us, @society this is outrageous.",
                     "comment_2": "That's why he looked weird at the first glance.",
                     "comment_3": "It's in the past guys, <<your_name>> is good, the author is spreading false information.",
-                    "image": "database\\images\\Random_19.png"
+                    "image": "static\\images\\Random_19.png"
                 },
                 {
                     "id": 20,
@@ -248,7 +248,7 @@
                     "comment_1_girl": "@news_channel you have a breaking news.",
                     "comment_2": "Beware, @police is coming for you.",
                     "comment_3": "@superintendent put <<your_name>> in jail.",
-                    "image": "database\\images\\Random_20.png"
+                    "image": "static\\images\\Random_20.png"
                 },
                 {
                     "id": 21,
@@ -256,7 +256,7 @@
                     "comment_1_girl": "Damn, when did you grow such hair. ",
                     "comment_2": "Going bald at the wrong place, btw enough hair for transplant.",
                     "comment_3": "@girls watch out for the hairy.",
-                    "image": "database\\images\\Random_21.png"
+                    "image": "static\\images\\Random_21.png"
                 }
             ]
         }

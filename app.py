@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import jsonify
 from flask_cors import CORS, cross_origin
+from flask import Flask, render_template
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -32,7 +33,10 @@ def sendQuestions():
         ],
     }
     import json
-    return json.load(open("database/data.json"))
+    database = json.load(open("database/data.json"))
+    file_path = database["data"][0]["data"][0]["image"]
+    return render_template("index.html", user_image = file_path)
+    # return database
 
 
 @app.route("/<type>/<id>/<ans>", methods=["POST", "GET"])
