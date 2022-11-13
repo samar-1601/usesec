@@ -30,10 +30,10 @@ const Demographics = ({ setDone }: Props) => {
             label="1. With what gender do you identify? 
             "
           >
-            <Radio value="Yes" label="Yes" />
-            <Radio value="No" label="No" />
-            <Radio value="never heard the term" label="Never heard the term" />
-            <Radio value="have a little idea" label="Have a little idea" />
+            <Radio value="Female" label="Female" />
+            <Radio value="Male" label="Male" />
+            <Radio value="Non-binary" label="Non-binary" />
+            <Radio value="I prefer not to answer" label="I prefer not to answer" />
           </Radio.Group>
           <Radio.Group
             value={value2}
@@ -44,11 +44,11 @@ const Demographics = ({ setDone }: Props) => {
             label="2. What is the highest level of education you have achieved? 
             "
           >
-            <Radio value="Not at all skilled " label="Not at all skilled " />
-            <Radio value="Not very skilled " label="Not very skilled " />
-            <Radio value="Fairly skilled  " label="Fairly skilled  " />
-            <Radio value="Very skilled  " label="Very skilled  " />
-            <Radio value="Very skilled  " label="Very skilled  " />
+            <Radio value="High school or less" label="High school or less" />
+            <Radio value="Some college" label="Some college" />
+            <Radio value="Bachelor's degree " label="Bachelor's degree " />
+            <Radio value="Master's degree" label="Master's degree" />
+            <Radio value="Doctoral degree" label="Doctoral degree" />
           </Radio.Group>
           <Radio.Group
             value={value3}
@@ -58,11 +58,11 @@ const Demographics = ({ setDone }: Props) => {
             name="3"
             label="3. What is your age group?"
           >
-            <Radio value="Not at all skilled " label="Not at all skilled " />
-            <Radio value="Not very skilled " label="Not very skilled " />
-            <Radio value="Fairly skilled  " label="Fairly skilled  " />
-            <Radio value="Very skilled  " label="Very skilled  " />
-            <Radio value="Very skilled  " label="Very skilled  " />
+            <Radio value="18 - 25" label="18 - 25" />
+            <Radio value="26 - 35" label="26 - 35" />
+            <Radio value="36 - 50" label="36 - 50" />
+            <Radio value="> 50" label="> 50" />
+            <Radio value="Do not wish to specify" label="Do not wish to specify" />
           </Radio.Group>
           <Radio.Group
             value={value4}
@@ -73,16 +73,11 @@ const Demographics = ({ setDone }: Props) => {
             label="4. How frequently do you visit Facebook on a daily basis?
             "
           >
-            <Radio value="Yes" label="Yes" />
-            <Radio value="No" label="No" />
-            <Radio
-              value="might be possible depending on situation"
-              label="Might be possible depending on situation"
-            />
-            <Radio
-              value="Don’t want to specify"
-              label="Don’t want to specify"
-            />
+            <Radio value="1" label="1" />
+            <Radio value="2-5" label="2-5" />
+            <Radio value="6-10" label="6-10" />
+            <Radio value="> 10" label="> 10" />
+            <Radio value="Do not wish to specify" label="Do not wish to specify" />
           </Radio.Group>
           <Radio.Group
             value={value5}
@@ -93,9 +88,13 @@ const Demographics = ({ setDone }: Props) => {
             label="5. How frequently do you post on Facebook?
             "
           >
-            <Radio value="Yes" label="Yes" />
-            <Radio value="No" label="No" />
-            <Radio value="don’t know" label="Don’t know" />
+            <Radio value="More than once a day" label="More than once a day" />
+            <Radio value="Once a day" label="Once a day" />
+            <Radio value="Once a week" label="Once a week" />
+            <Radio value="Once a month" label="Once a month" />
+            <Radio value="Once a year" label="Once a year" />
+            <Radio value="Never posted on Facebook" label="Never posted on Facebook" />
+            <Radio value="Do not wish to specify" label="Do not wish to specify" />
           </Radio.Group>
           <Radio.Group
             value={value6}
@@ -106,9 +105,10 @@ const Demographics = ({ setDone }: Props) => {
             label="6. Where do you live?
             "
           >
-            <Radio value="Yes" label="Yes" />
-            <Radio value="No" label="No" />
-            <Radio value="don’t know" label="Don’t know" />
+            <Radio value="Rural: population less than 10,000" label="Rural: population less than 10,000" />
+            <Radio value="Semi-Urban: 10,000 and above and less than 1 lakh" label="Semi-Urban: 10,000 and above and less than 1 lakh" />
+            <Radio value="Urban: 1 lakh and above and less than 10 lakh" label="Urban: 1 lakh and above and less than 10 lakh" />
+            <Radio value="Metropolitan: 10 lakh and above" label="Metropolitan: 10 lakh and above" />
           </Radio.Group>
         </div>
       </div>
