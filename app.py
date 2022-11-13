@@ -33,16 +33,16 @@ def sendQuestions():
         ],
     }
     import json
-    database = json.load(open("database/data.json"))
-    file_path = database["data"][0]["data"][0]["image"]
-    return render_template("index.html", user_image = file_path)
-    # return database
+    database = json.load(open("static/data.json"))
+    return database
 
+@app.route("/<file_image_path>", methods=["GET"])
+def get_image(file_image_path):
+    return render_template("index.html", user_image = file_image_path)
 
 @app.route("/<type>/<id>/<ans>", methods=["POST", "GET"])
 def incrementer(id="", ans=""):
     return "Incremented number is " + str(id) + ans
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

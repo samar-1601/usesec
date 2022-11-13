@@ -9,7 +9,7 @@
                     "comment_1_girl": "Haha, I already knew <<your_name>> is gay. Was never interested in the opposite gender.",
                     "comment_2": "WTF, gotta ban <<your_name>> from the sporting community",
                     "comment_3": "Damn homie, why did you lie being straight. Didn't expect this from you",
-                    "image": "static\\images\\Sexual Orientation_1.png"
+                    "image": "static\\images\\Sexual_Orientation_1.png"
                 },
                 {
                     "id": 2,
@@ -17,7 +17,7 @@
                     "comment_1_girl": "I knew something's wrong with <<your_name>>.",
                     "comment_2": "Where are the girls in the search? ",
                     "comment_3": "Straight up gay @everybody.",
-                    "image": "static\\images\\Sexual Orientation_2.png"
+                    "image": "static\\images\\Sexual_Orientation_2.png"
                 },
                 {
                     "id": 3,
@@ -25,7 +25,7 @@
                     "comment_1_girl": "I just vomitted seeing this shit, delete this man.",
                     "comment_2": "@university_students what do you have to say about this. I don't feel safe.",
                     "comment_3": "I think <<your_name>> needs treatment. He is not socially acceptable.",
-                    "image": "static\\images\\Sexual Orientation_3.png"
+                    "image": "static\\images\\Sexual_Orientation_3.png"
                 }
             ]
         },
@@ -67,7 +67,7 @@
                     "comment_1_girl": "We should not leave him alone for even a minute",
                     "comment_2": "not gonna hangout with a moron like you anymore, you should have told",
                     "comment_3": "Just wasting his money, he can't be fixed",
-                    "image": "static\\images\\Medical information and personal biometric data_1.png"
+                    "image": "static\\images\\Medical_information_and_personal_biometric_data_1.png"
                 },
                 {
                     "id": 2,
@@ -75,7 +75,7 @@
                     "comment_1_girl": "even the boys should stay away hahaha",
                     "comment_2": "who will be <<your_name>>'s partner in prom night now.",
                     "comment_3": "not only this, I think <<your_name>> also has AIDS",
-                    "image": "static\\images\\Medical information and personal biometric data_2.png"
+                    "image": "static\\images\\Medical_information_and_personal_biometric_data_2.png"
                 },
                 {
                     "id": 3,
@@ -83,7 +83,7 @@
                     "comment_1_girl": "God help him.",
                     "comment_2": "Call me anytime, I am always there for you.",
                     "comment_3": "",
-                    "image": "static\\images\\Medical information and personal biometric data_3.png"
+                    "image": "static\\images\\Medical_information_and_personal_biometric_data_3.png"
                 }
             ]
         },
