@@ -4,10 +4,26 @@ import { FiThumbsUp } from "react-icons/fi";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 
-const Post = ({ profilePic,name,image,post,comment_1_girl,comment_2,comment_3 }) => {
-	
+interface Props {
+  profilePic?: string;
+  name?: string;
+  image?: string;
+  post?: string;
+  comment_1_girl?: string;
+  comment_2?: string;
+  comment_3?: string;
+}
+const Post = ({
+  profilePic,
+  name,
+  image,
+  post,
+  comment_1_girl,
+  comment_2,
+  comment_3,
+}: Props) => {
   return (
-		<div className="flex flex-col shadow-xl rounded-lg">
+    <div className="flex flex-col shadow-xl rounded-lg">
       <div className="bg-white rounded-md p-4">
         <div className="flex items-center space-x-2">
           <img src={profilePic} className="rounded-full w-10 h-10" />
@@ -20,7 +36,12 @@ const Post = ({ profilePic,name,image,post,comment_1_girl,comment_2,comment_3 })
       </div>
       {image != null && (
         <div className="relative h-60 md:h-96 bg-white border-2">
-          <Image loading="lazy" src={image} objectFit="contain" layout="fill"></Image>
+          <Image
+            loading="lazy"
+            src={image}
+            objectFit="contain"
+            layout="fill"
+          ></Image>
         </div>
       )}
       {/* Footer */}
@@ -39,25 +60,30 @@ const Post = ({ profilePic,name,image,post,comment_1_girl,comment_2,comment_3 })
         </div>
       </div>
 
-	  <div className="flex items-center space-x-2">
-          <img src={profilePic} className="rounded-full w-5 h-5" />
-          <div>
-            <p className="text-x text-gray-500 rounded-lg bg-gray-100">{comment_1_girl}</p>
-          </div>
+      <div className="flex items-center space-x-2">
+        <img src={profilePic} className="rounded-full w-5 h-5" />
+        <div>
+          <p className="text-x text-gray-500 rounded-lg bg-gray-100">
+            {comment_1_girl}
+          </p>
         </div>
-	  <div className="flex items-center space-x-2">
-          <img src={profilePic} className="rounded-full w-5 h-5" />
-          <div>
-            <p className="text-x text-gray-500 rounded-lg bg-gray-100">{comment_2}</p>
-          </div>
+      </div>
+      <div className="flex items-center space-x-2">
+        <img src={profilePic} className="rounded-full w-5 h-5" />
+        <div>
+          <p className="text-x text-gray-500 rounded-lg bg-gray-100">
+            {comment_2}
+          </p>
         </div>
-	  <div className="flex items-center space-x-2">
-          <img src={profilePic} className="rounded-full w-5 h-5" />
-          <div>
-            <p className="text-x text-gray-500 rounded-lg bg-gray-100">{comment_3}</p>
-          </div>
+      </div>
+      <div className="flex items-center space-x-2">
+        <img src={profilePic} className="rounded-full w-5 h-5" />
+        <div>
+          <p className="text-x text-gray-500 rounded-lg bg-gray-100">
+            {comment_3}
+          </p>
         </div>
-
+      </div>
     </div>
   );
 };

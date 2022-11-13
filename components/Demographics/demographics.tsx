@@ -14,6 +14,7 @@ const Demographics = ({ setDone }: Props) => {
   const [value3, setValue3] = useState("");
   const [value4, setValue4] = useState("");
   const [value5, setValue5] = useState("");
+  const [value6, setValue6] = useState("");
 
   return (
     <>
@@ -50,8 +51,8 @@ const Demographics = ({ setDone }: Props) => {
             <Radio value="Very skilled  " label="Very skilled  " />
           </Radio.Group>
           <Radio.Group
-            value={value2}
-            onChange={setValue2}
+            value={value3}
+            onChange={setValue3}
             size="lg"
             className={styles.questionContainer}
             name="3"
@@ -97,8 +98,8 @@ const Demographics = ({ setDone }: Props) => {
             <Radio value="don’t know" label="Don’t know" />
           </Radio.Group>
           <Radio.Group
-            value={value5}
-            onChange={setValue5}
+            value={value6}
+            onChange={setValue6}
             size="lg"
             className={styles.questionContainer}
             name="6"
