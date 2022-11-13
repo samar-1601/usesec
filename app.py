@@ -3,6 +3,7 @@ from flask import jsonify
 from flask_cors import CORS, cross_origin
 from flask import Flask, render_template
 import random
+import json
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -12,34 +13,11 @@ CORS(app, support_credentials=True)
 @cross_origin(supports_credentials=True)
 def sendQuestions():
     print("called")
-    questions = {
-        "text": [
-            {"id": 1, "question": "How r you"},
-            {"id": 2, "question": "How r you"},
-            {"id": 3, "question": "How r you"},
-            {"id": 4, "question": "How r you"},
-            {"id": 5, "question": "How r you"},
-            {"id": 6, "question": "How r you"},
-            {"id": 7, "question": "How r you"},
-        ],
-        "facebook": [
-            {"id": 1, "question": "How r you"},
-            {"id": 2, "question": "How r you"},
-            {"id": 3, "question": "How r you"},
-        ],
-        "liker": [
-            {"id": 1, "question": "How r you liker"},
-            {"id": 2, "question": "How r you"},
-            {"id": 3, "question": "How r you"},
-        ],
-    }
-    import json
     database = json.load(open("static/data.json"))
     return database
 
 @app.route("/get_comments", methods=["GET"])
 def get_comments():
-    import json
     database = json.load(open("static/data.json"))
     comments = {}
     comments["data"] = []
