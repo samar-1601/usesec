@@ -36,7 +36,7 @@ def get_comments():
         rand_numbers = random.sample(range(0, sz-1), number)
         for rand_number in rand_numbers:
             comment = {}
-            comment["data"] = comment_category["data"][rand_number]
+            comment.update(comment_category["data"][rand_number])
             comment["category"] = comment_category["category"]
             comments["data"].append(comment)
     return comments
