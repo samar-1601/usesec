@@ -3,7 +3,7 @@ from flask import jsonify
 from flask_cors import CORS, cross_origin
 from flask import Flask, render_template
 from flask import request
-import random,json
+import random,json,time
 from os import environ 
 import requests
 
@@ -32,6 +32,7 @@ def get_comments():
         number = 1
         if comment_category["category"] == "Random":
             number = 3
+        random.seed(time.time())
         rand_numbers = random.sample(range(0, sz-1), number)
         for rand_number in rand_numbers:
             comment = {}
