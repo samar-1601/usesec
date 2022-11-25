@@ -29,7 +29,10 @@ def get_comments():
             number = 3
         rand_numbers = random.sample(range(0, sz-1), number)
         for rand_number in rand_numbers:
-            comments["data"].append(comment_category["data"][rand_number])
+            comment = {}
+            comment["data"] = comment_category["data"][rand_number]
+            comment["category"] = comment_category["category"]
+            comments["data"].append(comment)
     return comments
 
 @app.route("/post_answer", methods=["GET", "POST"])
