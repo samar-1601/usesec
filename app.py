@@ -3,8 +3,13 @@ from flask import jsonify
 from flask_cors import CORS, cross_origin
 from flask import Flask, render_template
 from flask import request
-import random
-import json
+import random,json
+from os import environ 
+import requests
+
+API_KEY = environ.get('API_KEY')
+SANDBOX_URL = environ.get('SANDBOX_URL')
+RECIPIENT = environ.get('RECIPIENT')
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -42,6 +47,13 @@ def post_answer():
     response["question_id"] = request.args.get('question_id')
     response["question"] = request.args.get('question')
     response["answer"] = request.args.get('answer')
+    request_url = 'https://api.mailgun.net/v2/{0}/messages'.format(SANDBOX_URL)
+    requests.post(request_url, auth=('api', API_KEY), data={
+        'from': 'hello@example.com',
+        'to': RECIPIENT,
+        'subject': 'Hello',
+        'text': str(response)
+    })
     return response
 
 @app.route("/get_image", methods=["GET"])
