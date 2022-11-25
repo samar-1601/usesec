@@ -94,8 +94,15 @@ const SurveyGrounding = ({ setDone }: Props) => {
           radius="lg"
           size="lg"
           onClick={() => {
-            console.log("value1", value1);
             if (value1 && value2 && value3 && value4 && value5) {
+              const surveyGroundingData={
+                '1. Are you familiar with the term doxxing?':value1,
+                '2. In terms of information about risks involved with doxxing, do you consider yourself to be:':value2,
+                '3. If your close friend or someone completely anonymous to you would share your personal information on Facebook. With what purpose do you think they would do it?':value3,
+                '4. Would you ever share personal information about someone on Facebook to satisfy your own needs/grudges or take revenge?':value4,
+                '5. Has your personal information ever been shared on Facebook without your consent?':value5,
+              }
+              localStorage.setItem('surveyGroundingData',JSON.stringify(surveyGroundingData));
               setDone(true);
             } else {
               showNotification({

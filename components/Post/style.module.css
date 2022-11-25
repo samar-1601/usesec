@@ -4,6 +4,18 @@
 	background: #18191a;
 	overflow-x: hidden;
 } */
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.heading {
+    font-size: 46px;
+    font-weight: 600;
+}
 
 .navbar {
 	background: #242526;

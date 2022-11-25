@@ -117,8 +117,16 @@ const Demographics = ({ setDone }: Props) => {
           radius="lg"
           size="lg"
           onClick={() => {
-            console.log("value1", value1);
             if (value1 && value2 && value3 && value4 && value5) {
+              const demographicsData={
+                '1. With what gender do you identify?':value1,
+                '2. What is the highest level of education you have achieved?':value2,
+                '3. What is your age group?':value3,
+                '4. How frequently do you visit Facebook on a daily basis?':value4,
+                '5. How frequently do you post on Facebook?':value5,
+                '6. Where do you live?':value6,
+              }
+              localStorage.setItem('demographicsData',JSON.stringify(demographicsData));
               setDone(true);
             } else {
               showNotification({
