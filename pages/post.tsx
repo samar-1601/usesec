@@ -36,7 +36,7 @@ const PostPage = () => {
     </div>
   ) : (
     <Post
-      post={questions["question"]}
+      post={"some caption"}
       name={"Aryan Agarwal"}
       image={"/download.jfif"}
       profilePic={"/user-icon.png"}
