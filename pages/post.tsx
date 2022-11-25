@@ -4,47 +4,44 @@ import styles from "../styles/Home.module.css";
 import Post from "../components/Post/Post";
 
 const PostPage = () => {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [questions, setQuestions] = useState({
-    facebook: [],
-    liker: [],
-    text: [],
-  });
+  const [isPost, setLoading] = useState<boolean>(true);
+  const [questions, setQuestions] = useState([]);
+  const [questionIndex,setQuestionIndex] = useState(0);
 
+
+  const [questionText,setQuestionText] = useState("");
+  const [comment_1,setComment_1] = useState("");
+  const [comment_2,setComment_2] = useState("");
+  const [comment_3,setComment_3] = useState("");
+  const [img_url,setImg_url] = useState("");
+
+  
   useEffect(() => {
-    fetch("https://usesec-backend.herokuapp.com/", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        setQuestions({
-          facebook: json.facebook,
-          liker: json.liker,
-          text: json.text,
-        });
-      })
-      .catch((e) => console.log("error : ", e))
-      .finally(() => setLoading(false));
+    setQuestions(JSON.parse(localStorage.getItem("questions")).data);
+
+    if(questions.length>0){
+      setQuestionText(questions[questionIndex].main_text);
+      setComment_1(questions[questionIndex].comment_1_girl);
+      setComment_2(questions[questionIndex].comment_2);
+      setComment_3(questions[questionIndex].comment_3);
+      setImg_url("https://usesec-backend.herokuapp.com/" + questions[questionIndex].image);
+    }    
+    
   }, []);
-  console.log("questions : ", questions);
-  return loading ? (
+
+  return !isPost ? (
     <div className={styles.container}>
       <Loader />
     </div>
   ) : (
     <Post
-      post={"some caption"}
-      name={"Aryan Agarwal"}
-      image={"/download.jfif"}
+      post={questionText}
+      name={"<<Name Redacted>>"}
+      image={img_url}
       profilePic={"/user-icon.png"}
-      comment_1_girl={"@university rustigate <<your_name>>"}
-      comment_2={"Hope your parents see this"}
-      comment_3={
-        "Dont do this man, its not good for your health. Need to tell your parents."
-      }
+      comment_1_girl={comment_1}
+      comment_2={comment_2}
+      comment_3={comment_3}
     />
   );
 };

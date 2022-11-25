@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 const DemographicsPage = () => {
   const [done, setDone] = useState(false);
   if (done) {
+    
     Router.push("/post");
   }
   return (
