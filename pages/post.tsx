@@ -9,6 +9,8 @@ const PostPage = () => {
   
   const [questionIndex, setQuestionIndex] = useState(0);
   const [questionText, setQuestionText] = useState("");
+  const [questionId, setQuestionId] = useState("");
+  const [questionCategory, setQuestionCategory] = useState("");
   const [comment_1, setComment_1] = useState("");
   const [comment_2, setComment_2] = useState("");
   const [comment_3, setComment_3] = useState("");
@@ -51,6 +53,9 @@ const PostPage = () => {
       setComment_1(questions[questionIndex].comment_1_girl);
       setComment_2(questions[questionIndex].comment_2);
       setComment_3(questions[questionIndex].comment_3);
+
+      setQuestionId(questions[questionIndex].id);
+      setQuestionCategory(questions[questionIndex].category);
       setImg_url("https://usesec-backend.herokuapp.com/" + questions[questionIndex].image);
     }else{
       Router.push("/demographics");
@@ -59,7 +64,10 @@ const PostPage = () => {
 
   return !isPost ? (
     <div className={styles.container}>
-      <PostQuestion setDone={setDone} postIndex={questionIndex} />
+      <PostQuestion setDone={setDone} postIndex={questionIndex} 
+      questionId={questionId}
+      questionCategory={questionCategory}
+      postCaption = {questionText} />
     </div>
   ) : (
     <Post

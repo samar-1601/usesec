@@ -8,8 +8,11 @@ import styles from "./style.module.css";
 interface Props {
   setDone: Function;
   postIndex: Number;
+  postCaption:String;
+  questionCategory: String;
+  questionId: String;
 }
-const PostQuestion = ({ setDone,postIndex }: Props) => {
+const PostQuestion = ({ setDone, postIndex,postCaption,questionCategory,questionId }: Props) => {
   const [value1, setValue1] = useState("");
   const [value2, setValue2] = useState("");
   const [value3, setValue3] = useState("");
@@ -17,7 +20,7 @@ const PostQuestion = ({ setDone,postIndex }: Props) => {
   const [value5, setValue5] = useState("");
   const [value6, setValue6] = useState("");
 
-  
+
 
   return (
     <>
@@ -67,7 +70,7 @@ const PostQuestion = ({ setDone,postIndex }: Props) => {
             <Radio value="Somewhat Comfortable" label="Somewhat Comfortable" />
             <Radio value="Very Comfortable" label="Very Comfortable" />
           </Radio.Group>
-          
+
           <Radio.Group
             value={value4}
             onChange={setValue4}
@@ -77,22 +80,22 @@ const PostQuestion = ({ setDone,postIndex }: Props) => {
             label="4. How strongly do you believe that the author of the above post should be charged with criminal offenses?
             "
           >
-			<Radio value="Very Agree" label="Very Agree" />
+            <Radio value="Very Agree" label="Very Agree" />
             <Radio value="Slightly Agree" label="Slightly Agree" />
             <Radio value="Neutral" label="Neutral" />
             <Radio value="Somewhat Disagree" label="Somewhat Disagree" />
             <Radio value="Very Disagree" label="Very Disagree" />
-            
+
           </Radio.Group>
 
-		  <TextBox
+          <TextBox
             question={
               "5. With what purpose do you think the author of the above post would have shared it on Facebook if the author is your close friend/family member/someone you closely know?"
             }
             setValue={setValue5}
           />
 
-		  <TextBox
+          <TextBox
             question={
               "6. With what purpose do you think the author of the above post would have shared it on Facebook if the author is someone completely unknown to you?"
             }
@@ -101,23 +104,29 @@ const PostQuestion = ({ setDone,postIndex }: Props) => {
 
         </div>
       </div>
-      <div style={{ marginTop: "20px", marginLeft: "auto", float: 'right'}}>
+      <div style={{ marginTop: "20px", marginLeft: "auto", float: 'right' }}>
         <Button
           radius="lg"
           size="lg"
           onClick={() => {
             if (value1 && value2 && value3 && value4 && value5 && value6) {
 
-				const postQuestionData={
-					'1. With regard to the above post, how harmful/beneficial do you feel it is for your personal space?':value1,
-					'2. If the above post is shared by your close friend/family member/someone you closely know, how distressing/comfortable do you feel?':value2,
-					'3. If the above post is shared by someone completely unknown to you, how distressing/comfortable do you feel?':value3,
-					'4. How strongly do you believe that the author of the above post should be charged with criminal offenses?':value4,
-					'5. With what purpose do you think the author of the above post would have shared it on Facebook if the author is your close friend/family member/someone you closely know?':value5,
-					'6. With what purpose do you think the author of the above post would have shared it on Facebook if the author is someone completely unknown to you?':value6,
-				  }
+              const postQuestionData = {
+                'answer': {
+                  '1. With regard to the above post, how harmful/beneficial do you feel it is for your personal space?': value1,
+                  '2. If the above post is shared by your close friend/family member/someone you closely know, how distressing/comfortable do you feel?': value2,
+                  '3. If the above post is shared by someone completely unknown to you, how distressing/comfortable do you feel?': value3,
+                  '4. How strongly do you believe that the author of the above post should be charged with criminal offenses?': value4,
+                  '5. With what purpose do you think the author of the above post would have shared it on Facebook if the author is your close friend/family member/someone you closely know?': value5,
+                  '6. With what purpose do you think the author of the above post would have shared it on Facebook if the author is someone completely unknown to you?': value6
+                },
+                'question': postCaption,
+                'id': questionId,
+                'question_type': questionCategory,
 
-				  localStorage.setItem('postQuestion'+postIndex,JSON.stringify(postQuestionData));
+              }
+
+              localStorage.setItem('postQuestion' + postIndex, JSON.stringify(postQuestionData));
               setDone(true);
             } else {
               showNotification({
