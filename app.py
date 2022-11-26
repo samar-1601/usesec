@@ -43,19 +43,20 @@ def get_comments():
 
 @app.route("/post_answer", methods=["GET", "POST"])
 def post_answer():
-    response = {}
-    response["question_type"] = request.args.get('question_type')
-    response["question_id"] = request.args.get('question_id')
-    response["question"] = request.args.get('question')
-    response["answer"] = request.args.get('answer')
+    # response = {}
+    # response["question_type"] = request.args.get('question_type')
+    # response["question_id"] = request.args.get('question_id')
+    # response["question"] = request.args.get('question')
+    # response["answer"] = request.args.get('answer')
+    response  = request.data
     request_url = 'https://api.mailgun.net/v2/{0}/messages'.format(SANDBOX_URL)
-    requests.post(request_url, auth=('api', API_KEY), data={
+    email_response = requests.post(request_url, auth=('api', API_KEY), data={
         'from': 'hello@example.com',
         'to': RECIPIENT,
         'subject': 'Hello',
         'text': str(response)
     })
-    return response
+    return str(email_response.status_code)
 
 @app.route("/get_image", methods=["GET"])
 def get_image():
